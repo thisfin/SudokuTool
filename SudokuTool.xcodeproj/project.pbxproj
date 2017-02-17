@@ -14,6 +14,7 @@
 		66D792D61E54542000475454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D792D41E54542000475454 /* LaunchScreen.storyboard */; };
 		66D792DE1E55DF6100475454 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D792DD1E55DF6100475454 /* BoardView.swift */; };
 		66D792E01E55FF8200475454 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D792DF1E55FF8100475454 /* Constants.swift */; };
+		66D792E21E57010400475454 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D792E11E57010400475454 /* NumberView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		66D792D71E54542000475454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66D792DD1E55DF6100475454 /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		66D792DF1E55FF8100475454 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		66D792E11E57010400475454 /* NumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 		A7BD3E8DC83B96B40BAA3A9F /* Pods-SudokuTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudokuTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SudokuTool/Pods-SudokuTool.debug.xcconfig"; sourceTree = "<group>"; };
 		E114679A807AA17434FA2768 /* Pods_SudokuTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudokuTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 				66D792CD1E54542000475454 /* ViewController.swift */,
 				66D792D21E54542000475454 /* Assets.xcassets */,
 				66D792D41E54542000475454 /* LaunchScreen.storyboard */,
+				66D792E11E57010400475454 /* NumberView.swift */,
 			);
 			path = SudokuTool;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				66D792DE1E55DF6100475454 /* BoardView.swift in Sources */,
 				66D792CE1E54542000475454 /* ViewController.swift in Sources */,
 				66D792CC1E54542000475454 /* AppDelegate.swift in Sources */,
+				66D792E21E57010400475454 /* NumberView.swift in Sources */,
 				66D792E01E55FF8200475454 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
