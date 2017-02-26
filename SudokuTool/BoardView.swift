@@ -20,6 +20,8 @@ class BoardView : UIView, UICollectionViewDataSource, UICollectionViewDelegateFl
     override init(frame: CGRect) {
         super.init(frame: frame)
 
+        backgroundColor = .orange
+
         let layout = UICollectionViewLayout()
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.dataSource = self

@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow()
         window?.screen = UIScreen.main
-        window?.rootViewController = ViewController()
+        window?.rootViewController = GameEditViewController()
         window?.makeKeyAndVisible()
 
         return true
