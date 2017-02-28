@@ -11,7 +11,8 @@ import SnapKit
 
 class BoardView : UIView, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     var collectionView: UICollectionView!
-    let datas: [[Int]] = Array(repeating: Array(repeating: 0, count: 9), count: 9)
+    var datas: [[Int]] = Array(repeating: Array(repeating: 0, count: 9), count: 9)
+    let identifierString = "identifierString"
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -22,10 +23,17 @@ class BoardView : UIView, UICollectionViewDataSource, UICollectionViewDelegateFl
 
         backgroundColor = .orange
 
-        let layout = UICollectionViewLayout()
+        let layout = UICollectionViewFlowLayout()
+//        layout.scrollDirection = .vertical
+        layout.itemSize = CGSize(width: Constants.columnWidth, height: Constants.columnWidth)
+//        layout.minimumInteritemSpacing = 0
+//        layout.minimumLineSpacing = 0
+
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.register(NumberViewCell.self, forCellWithReuseIdentifier: identifierString)
+        collectionView.backgroundColor = .clear
         addSubview(collectionView)
         collectionView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
@@ -34,11 +42,13 @@ class BoardView : UIView, UICollectionViewDataSource, UICollectionViewDelegateFl
 
     // MARK: - UICollectionViewDataSource
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Constants.columnCount
+        return datas.count * datas.count
     }
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "", for: indexPath)
+        let cell: NumberViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: identifierString, for: indexPath) as! NumberViewCell
+        cell.setValue(numbers: [datas[indexPath.item / 9][indexPath.item % 9]])
+        cell.setBorder(indexPath: indexPath)
         return cell;
     }
 
@@ -47,5 +57,13 @@ class BoardView : UIView, UICollectionViewDataSource, UICollectionViewDelegateFl
     // MARK: - UICollectionViewDelegateFlowLayout
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: Constants.columnWidth, height: Constants.columnWidth)
+    }
+
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
     }
 }

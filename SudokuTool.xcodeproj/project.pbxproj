@@ -14,6 +14,7 @@
 		6613E1C91E629EE1002B2CE3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6613E1C81E629EE1002B2CE3 /* ResultViewController.swift */; };
 		6613E1CB1E629F07002B2CE3 /* GameEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6613E1CA1E629F07002B2CE3 /* GameEditViewController.swift */; };
 		6613E1CD1E629F15002B2CE3 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6613E1CC1E629F15002B2CE3 /* GamePlayViewController.swift */; };
+		665B574E1E646D5000E46367 /* NumberViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665B574D1E646D5000E46367 /* NumberViewCell.swift */; };
 		66D792CC1E54542000475454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D792CB1E54542000475454 /* AppDelegate.swift */; };
 		66D792CE1E54542000475454 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D792CD1E54542000475454 /* ViewController.swift */; };
 		66D792D31E54542000475454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D792D21E54542000475454 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		6613E1C81E629EE1002B2CE3 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		6613E1CA1E629F07002B2CE3 /* GameEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEditViewController.swift; sourceTree = "<group>"; };
 		6613E1CC1E629F15002B2CE3 /* GamePlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
+		665B574D1E646D5000E46367 /* NumberViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberViewCell.swift; sourceTree = "<group>"; };
 		66D792C81E54542000475454 /* SudokuTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SudokuTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D792CB1E54542000475454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66D792CD1E54542000475454 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,20 +79,21 @@
 		66D792CA1E54542000475454 /* SudokuTool */ = {
 			isa = PBXGroup;
 			children = (
-				66D792D71E54542000475454 /* Info.plist */,
 				6613E1C61E629E4F002B2CE3 /* AboutViewController.swift */,
 				66D792CB1E54542000475454 /* AppDelegate.swift */,
+				66D792D21E54542000475454 /* Assets.xcassets */,
 				66D792DD1E55DF6100475454 /* BoardView.swift */,
 				66D792DF1E55FF8100475454 /* Constants.swift */,
 				6613E1CA1E629F07002B2CE3 /* GameEditViewController.swift */,
 				6613E1CC1E629F15002B2CE3 /* GamePlayViewController.swift */,
 				6613E1C21E629E23002B2CE3 /* GamesViewController.swift */,
+				66D792D71E54542000475454 /* Info.plist */,
+				66D792D41E54542000475454 /* LaunchScreen.storyboard */,
 				66D792E11E57010400475454 /* NumberView.swift */,
+				665B574D1E646D5000E46367 /* NumberViewCell.swift */,
 				6613E1C81E629EE1002B2CE3 /* ResultViewController.swift */,
 				6613E1C41E629E33002B2CE3 /* SettingViewController.swift */,
 				66D792CD1E54542000475454 /* ViewController.swift */,
-				66D792D21E54542000475454 /* Assets.xcassets */,
-				66D792D41E54542000475454 /* LaunchScreen.storyboard */,
 			);
 			path = SudokuTool;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				66D792DE1E55DF6100475454 /* BoardView.swift in Sources */,
 				66D792CE1E54542000475454 /* ViewController.swift in Sources */,
 				6613E1CB1E629F07002B2CE3 /* GameEditViewController.swift in Sources */,
+				665B574E1E646D5000E46367 /* NumberViewCell.swift in Sources */,
 				66D792CC1E54542000475454 /* AppDelegate.swift in Sources */,
 				66D792E21E57010400475454 /* NumberView.swift in Sources */,
 				6613E1C31E629E23002B2CE3 /* GamesViewController.swift in Sources */,
